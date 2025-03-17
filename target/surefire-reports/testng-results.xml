@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-17T10:33:16 COT" name="API Automation Suite" finished-at="2025-03-17T10:33:18 COT" duration-ms="2332">
+    <groups>
+    </groups>
+    <test started-at="2025-03-17T10:33:16 COT" name="API Tests" finished-at="2025-03-17T10:33:18 COT" duration-ms="2332">
+      <class name="testApis.Apis">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testApis.Apis@3c407114]" started-at="2025-03-17T10:33:16 COT" name="setup" finished-at="2025-03-17T10:33:16 COT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGetProducts()[pri:0, instance:testApis.Apis@3c407114]" started-at="2025-03-17T10:33:16 COT" name="testGetProducts" finished-at="2025-03-17T10:33:17 COT" duration-ms="1033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetProducts -->
+        <test-method signature="testDeleteProduct()[pri:0, instance:testApis.Apis@3c407114]" started-at="2025-03-17T10:33:16 COT" name="testDeleteProduct" finished-at="2025-03-17T10:33:17 COT" duration-ms="1115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteProduct -->
+        <test-method signature="testCreateProduct(java.lang.String)[pri:0, instance:testApis.Apis@3c407114]" started-at="2025-03-17T10:33:16 COT" name="testCreateProduct" data-provider="jsonProvidercreate" finished-at="2025-03-17T10:33:17 COT" duration-ms="1033" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{
+  "title": "Laptop Gamer",
+  "price": 1299.99,
+  "description": "Laptop gamer con tarjeta gráfica RTX 4060",
+  "category": "electronics",
+  "image": "https://example.com/laptop.jpg"
+}
+]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateProduct -->
+        <test-method signature="testUpdateProduct(java.lang.String)[pri:0, instance:testApis.Apis@3c407114]" started-at="2025-03-17T10:33:17 COT" name="testUpdateProduct" data-provider="jsonProviderupdate" finished-at="2025-03-17T10:33:18 COT" duration-ms="438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{
+  "title": "MacbookPRO",
+  "price": 1300,
+  "description": "Laptop gamer con tarjeta gráfica RTX 4060",
+  "category": "electronics",
+  "image": "https://example.com/laptop.jpg"
+}
+]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testApis.Apis@3c407114]" started-at="2025-03-17T10:33:19 COT" name="tearDown" finished-at="2025-03-17T10:33:19 COT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testApis.Apis -->
+      <class name="testApiFailed.FailedTest">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:testApiFailed.FailedTest@2ef3eef9]" started-at="2025-03-17T10:33:16 COT" name="setupReport" finished-at="2025-03-17T10:33:16 COT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method signature="testCreateFailedProduct(java.lang.String)[pri:0, instance:testApiFailed.FailedTest@2ef3eef9]" started-at="2025-03-17T10:33:17 COT" name="testCreateFailedProduct" data-provider="jsonProvidercreate" finished-at="2025-03-17T10:33:18 COT" duration-ms="898" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{
+  "title": "Laptop Gamer",
+  "price": 1299.99,
+  "description": "Laptop gamer con tarjeta gráfica RTX 4060",
+  "category": "electronics",
+  "image": "https://example.com/laptop.jpg"
+}
+]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateFailedProduct -->
+        <test-method signature="testFailedDeleteProduct()[pri:0, instance:testApiFailed.FailedTest@2ef3eef9]" started-at="2025-03-17T10:33:17 COT" name="testFailedDeleteProduct" finished-at="2025-03-17T10:33:18 COT" duration-ms="819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFailedDeleteProduct -->
+        <test-method signature="testFailedUpdateProduct(java.lang.String)[pri:0, instance:testApiFailed.FailedTest@2ef3eef9]" started-at="2025-03-17T10:33:18 COT" name="testFailedUpdateProduct" data-provider="jsonProviderupdate" finished-at="2025-03-17T10:33:18 COT" duration-ms="461" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{
+  "title": "MacbookPRO",
+  "price": 1300,
+  "category": "electronics",
+  "image": "https://example.com/laptop.jpg"
+}
+]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFailedUpdateProduct -->
+        <test-method signature="testGetFailedProducts()[pri:0, instance:testApiFailed.FailedTest@2ef3eef9]" started-at="2025-03-17T10:33:18 COT" name="testGetFailedProducts" finished-at="2025-03-17T10:33:18 COT" duration-ms="386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetFailedProducts -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:testApiFailed.FailedTest@2ef3eef9]" started-at="2025-03-17T10:33:18 COT" name="tearDownReport" finished-at="2025-03-17T10:33:19 COT" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- testApiFailed.FailedTest -->
+    </test> <!-- API Tests -->
+  </suite> <!-- API Automation Suite -->
+</testng-results>

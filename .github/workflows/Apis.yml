@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: mvn clean install -DskipTests
       - name: Run ApiTesting tests
-        run: mvn test -P RunTest
+        run: mvn test
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v4

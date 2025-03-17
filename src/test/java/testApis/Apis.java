@@ -21,6 +21,7 @@ public class Apis {
         extent = ExtentManager.getInstance();
     }
 
+
     @DataProvider(name = "jsonProvidercreate")
     public Object[][] createJson() throws Exception {
         String json = new String(Files.readAllBytes(Paths.get("src/test/resources/createproduct.json")));
